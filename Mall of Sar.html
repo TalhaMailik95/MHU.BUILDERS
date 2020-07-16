@@ -1,0 +1,157 @@
+<DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="Project-1.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Mall of Sargodha</title>
+</head>
+<body>
+
+<header>
+  <nav>
+       <div>
+           <h1>
+  <a href="https://www.facebook.com/MHU-Builders-448908861830948"><img src="images/Logo.jpeg" alt="logo" style="height: 20%; width: 38%;"></a></h1>
+       </div>
+       
+       <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+   </nav>
+        <div class="Divider"></div>
+</header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  <img src="images/13.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/1.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="images/2.jpg" style="width:100%; height: 60%">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="images/3.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="images/4.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="images/5.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="images/6.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="images/7.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="images/8.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  <img src="images/9.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="images/10.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="images/11.jpg" style="width:100%; height: 60%;">
+  <div class="text"style="background: black;">Mall of Sargodha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="images/12.jpg" style="width:100%; height: 60%;">
+  <div class="text" style="background: black;">Mall of Sargodha</div>
+</div>
+    </div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<h1>Details of Mall of Sargodha</h1>
+<h2>DOS :- 1 Aug 2017</h2>
+<h2>DOC :- 31 Jan 2019</h2>
+<h2>Cilent :- Mall of Sargodha</h2>
+<h2>Contructor:- MHU BUILDERS & Capital Builders</h2>
+
+
+</body>
+</html> 
